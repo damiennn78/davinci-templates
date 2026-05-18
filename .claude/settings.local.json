@@ -29,7 +29,11 @@
       "PowerShell(gh *)",
       "PowerShell(git *)",
       "PowerShell(Get-ChildItem -Recurse | Where-Object { -not $_.PSIsContainer } | Select-Object FullName, @{N=\"KB\";E={[math]::Round\\($_.Length/1KB,1\\)}} | Sort-Object FullName)",
-      "Bash(rtk git *)"
+      "Bash(rtk git *)",
+      "Bash(git remote *)",
+      "Bash(Get-ChildItem \"C:\\\\Users\\\\damien.mercier\\\\Desktop\\\\contenu n8n Emmanuel\\\\Template\\\\Docs\" -Recurse)",
+      "Bash(Select-Object FullName, Length)",
+      "PowerShell(rtk git *)"
     ]
   }
 }

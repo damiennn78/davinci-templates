@@ -243,7 +243,7 @@
 				},
 				Transform1 = Transform {
 					Inputs = {
-						Center = Input { Expression = "Point(iif(INTERTITREmodif.position_logo < 0.5, -1.872, 1.872), 4.588)", },
+						Center = Input { Expression = "Point(iif(INTERTITREmodif.position_logo < 0.5, 0.05, 0.95), 0.88)", },
 						Input = Input {
 							SourceOp = "LOGO_IMG",
 							Source = "Output",

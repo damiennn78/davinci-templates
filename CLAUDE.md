@@ -16,10 +16,16 @@ Template/
         Assets/
         <NOM_TEMPLATE>.setting ← DaVinci Resolve Fusion composition
     edit.drfx       ← packaged output (ZIP of Edit/ renamed .drfx)
+  Docs/                       ← reference documentation
+    fusion-setting-reference.md ← DaVinci Resolve Fusion .setting format reference
   CLAUDE.md
 ```
 
 **Rule**: every subfolder directly under `Template/` is a template.
 Each can have some assets located at `Edit/Titles/Assets/`.
+
+## Documentation
+
+`Docs/fusion-setting-reference.md` — reference for the DaVinci Resolve Fusion `.setting` file format. Consult it when reading or editing `.setting` composition files.
 
 
