@@ -1,0 +1,284 @@
+{
+	Tools = ordered() {
+		INTERTITREmodif = GroupOperator {
+			UserControls = ordered() {
+				position_logo = {
+					LINKS_Name = "Position logo",
+					LINKID_DataType = "Number",
+					INPID_InputControl = "ComboControl",
+					CC_Items = {
+						"Gauche",
+						"Droite",
+					},
+					INP_Default = 0,
+					ICD_Width = 1,
+				},
+				afficher_logo = {
+					LINKS_Name = "Afficher logo",
+					LINKID_DataType = "Number",
+					INPID_InputControl = "CheckboxControl",
+					INP_Default = 1,
+					ICD_Width = 1,
+				}
+			},
+			Inputs = ordered() {
+				Input1 = InstanceInput {
+					SourceOp = "TITRE",
+					Source = "StyledText",
+				},
+				Input2 = InstanceInput {
+					SourceOp = "TITRE",
+					Source = "Font",
+					ControlGroup = 2,
+				},
+			},
+			Outputs = {
+				Output1 = InstanceOutput {
+					SourceOp = "Path1",
+					Source = "Heading",
+				},
+				MainOutput1 = InstanceOutput {
+					SourceOp = "MediaOut1",
+					Source = "Output",
+				}
+			},
+			ViewInfo = GroupInfo { Pos = { 0, 0 } },
+			Tools = ordered() {
+				FOND_IMG = Loader {
+					Clips = {
+						Clip {
+							ID = "Clip1",
+							Filename = "setting:Assets\\fond.png",
+							FormatID = "PNGFormat",
+							StartFrame = -1,
+							LengthSetManually = true,
+							TrimIn = 0,
+							TrimOut = 0,
+							ExtendFirst = 0,
+							ExtendLast = 0,
+							Loop = 0,
+							AspectMode = 0,
+							Depth = 0,
+							TimeCode = 0,
+							GlobalStart = 0,
+							GlobalEnd = 0
+						}
+					},
+					NameSet = true,
+					Inputs = {
+						["Gamut.SLogVersion"] = Input { Value = FuID { "SLog2" }, },
+						["Clip1.PNGFormat.PostMultiply"] = Input { Value = 1, }
+					},
+					ViewInfo = OperatorInfo { Pos = { 53.3333, 82.5151 } },
+				},
+				LOGO_IMG = Loader {
+					Clips = {
+						Clip {
+							ID = "Clip1",
+							Filename = "setting:Assets\\logo.png",
+							FormatID = "PNGFormat",
+							StartFrame = -1,
+							LengthSetManually = true,
+							TrimIn = 0,
+							TrimOut = 0,
+							ExtendFirst = 0,
+							ExtendLast = 0,
+							Loop = 0,
+							AspectMode = 0,
+							Depth = 0,
+							TimeCode = 0,
+							GlobalStart = 0,
+							GlobalEnd = 0
+						}
+					},
+					NameSet = true,
+					Inputs = {
+						["Gamut.SLogVersion"] = Input { Value = FuID { "SLog2" }, },
+						["Clip1.PNGFormat.PostMultiply"] = Input { Value = 1, },
+						Blend = Input { Expression = "INTERTITREmodif.afficher_logo", },
+					},
+					ViewInfo = OperatorInfo { Pos = { 61.3334, 194.03 } },
+				},
+				Background1 = Background {
+					Inputs = {
+						Width = Input { Value = 1920, },
+						Height = Input { Value = 1080, },
+						UseFrameFormatSettings = Input { Value = 1, },
+						["Gamut.SLogVersion"] = Input { Value = FuID { "SLog2" }, },
+						TopLeftAlpha = Input { Value = 0, }
+					},
+					ViewInfo = OperatorInfo { Pos = { 56.6095, 50.3571 } },
+				},
+				TITRE = TextPlus {
+					NameSet = true,
+					Inputs = {
+						Width = Input { Value = 1920, },
+						Height = Input { Value = 1080, },
+						UseFrameFormatSettings = Input { Value = 1, },
+						["Gamut.SLogVersion"] = Input { Value = FuID { "SLog2" }, },
+						Wrap = Input { Value = 1, },
+						LayoutRotation = Input { Value = 1, },
+						CharacterOffset = Input {
+							SourceOp = "Path1",
+							Source = "Position",
+						},
+						TransformRotation = Input { Value = 1, },
+						Opacity1 = Input {
+							SourceOp = "TITREOpacity1",
+							Source = "Value",
+						},
+						Red1 = Input { Value = 0, },
+						Green1 = Input { Value = 0, },
+						Blue1 = Input { Value = 0, },
+						Softness1 = Input { Value = 1, },
+						StyledText = Input { Value = "TITRE / INTERTITRE", },
+						Font = Input { Value = "Clash Display", },
+						Style = Input { Value = "Bold", },
+						VerticalJustificationNew = Input { Value = 3, },
+						HorizontalJustificationNew = Input { Value = 3, },
+						TabSpacing = Input { Value = 1, },
+						AdvancedFontControls = Input { Value = 1, }
+					},
+					ViewInfo = OperatorInfo { Pos = { 57.9999, 119.758 } },
+				},
+				Path1 = PolyPath {
+					DrawMode = "InsertAndModify",
+					CtrlWZoom = false,
+					Inputs = {
+						Displacement = Input {
+							SourceOp = "Path1Displacement",
+							Source = "Value",
+						},
+						PolyLine = Input {
+							Value = Polyline {
+								Points = {
+									{ Linear = true, LockY = true, X = -0.5, Y = -0.457, RX = 0, RY = -0.0143333333333333 },
+									{ Linear = true, LockY = true, X = -0.5, Y = -0.5, LX = 0, LY = 0.0143333333333333 }
+								}
+							},
+						}
+					},
+				},
+				Path1Displacement = BezierSpline {
+					SplineColor = { Red = 255, Green = 0, Blue = 255 },
+					CtrlWZoom = false,
+					KeyFrames = {
+						[33] = { 0, RH = { 43, 0.333333333333333 }, Flags = { Linear = true, LockedY = true } },
+						[63] = { 1, LH = { 53, 0.666666666666667 }, Flags = { Linear = true, LockedY = true } }
+					}
+				},
+				TITREOpacity1 = BezierSpline {
+					SplineColor = { Red = 179, Green = 28, Blue = 244 },
+					CtrlWZoom = false,
+					KeyFrames = {
+						[33] = { 0, RH = { 43, 0.333333333333333 }, Flags = { Linear = true } },
+						[63] = { 1, LH = { 53, 0.666666666666667 }, Flags = { Linear = true } }
+					}
+				},
+				Merge2 = Merge {
+					Inputs = {
+						Background = Input {
+							SourceOp = "Merge1",
+							Source = "Output",
+						},
+						Foreground = Input {
+							SourceOp = "TITRE",
+							Source = "Output",
+						},
+						PerformDepthMerge = Input { Value = 0, }
+					},
+					ViewInfo = OperatorInfo { Pos = { 271.276, 119.152 } },
+				},
+				Merge1 = Merge {
+					Inputs = {
+						Background = Input {
+							SourceOp = "FOND_IMG",
+							Source = "Output",
+						},
+						Foreground = Input {
+							SourceOp = "Background1",
+							Source = "Output",
+						},
+						PerformDepthMerge = Input { Value = 0, }
+					},
+					ViewInfo = OperatorInfo { Pos = { 272.667, 82.145 } },
+				},
+				Merge3 = Merge {
+					Inputs = {
+						Background = Input {
+							SourceOp = "Merge2",
+							Source = "Output",
+						},
+						Foreground = Input {
+							SourceOp = "NOM",
+							Source = "Output",
+						},
+						PerformDepthMerge = Input { Value = 0, }
+					},
+					ViewInfo = OperatorInfo { Pos = { 270.61, 153.97 } },
+				},
+				NOM = TextPlus {
+					NameSet = true,
+					Inputs = {
+						Width = Input { Value = 1920, },
+						Height = Input { Value = 1080, },
+						UseFrameFormatSettings = Input { Value = 1, },
+						["Gamut.SLogVersion"] = Input { Value = FuID { "SLog2" }, },
+						Wrap = Input { Value = 1, },
+						Center = Input { Value = { 0.5, 0.066 }, },
+						LayoutRotation = Input { Value = 1, },
+						TransformRotation = Input { Value = 1, },
+						TransformShear = Input { Value = 1, },
+						Red1 = Input { Value = 0, },
+						Green1 = Input { Value = 0, },
+						Blue1 = Input { Value = 0, },
+						Softness1 = Input { Value = 1, },
+						StyledText = Input { Value = "Emmanuel Bernard", },
+						Font = Input { Value = "General Sans", },
+						Style = Input { Value = "Medium", },
+						Size = Input { Value = 0.0442, },
+						VerticalJustificationNew = Input { Value = 3, },
+						HorizontalJustificationNew = Input { Value = 3, }
+					},
+					ViewInfo = OperatorInfo { Pos = { 58.6667, 154.576 } },
+				},
+				Transform1 = Transform {
+					Inputs = {
+						Center = Input { Expression = "Point(iif(INTERTITREmodif.position_logo < 0.5, -1.872, 1.872), 4.588)", },
+						Input = Input {
+							SourceOp = "LOGO_IMG",
+							Source = "Output",
+						}
+					},
+					ViewInfo = OperatorInfo { Pos = { 171.333, 193.424 } },
+				},
+				Merge4 = Merge {
+					CtrlWZoom = false,
+					Inputs = {
+						Background = Input {
+							SourceOp = "Merge3",
+							Source = "Output",
+						},
+						Foreground = Input {
+							SourceOp = "Transform1",
+							Source = "Output",
+						},
+						PerformDepthMerge = Input { Value = 0, }
+					},
+					ViewInfo = OperatorInfo { Pos = { 281.333, 191.212 } },
+				},
+				MediaOut1 = MediaOut {
+					Inputs = {
+						Index = Input { Value = "0", },
+						Input = Input {
+							SourceOp = "Merge4",
+							Source = "Output",
+						}
+					},
+					ViewInfo = OperatorInfo { Pos = { 606.61, 182.357 } },
+				}
+			},
+		}
+	},
+	ActiveTool = "INTERTITREmodif"
+}
