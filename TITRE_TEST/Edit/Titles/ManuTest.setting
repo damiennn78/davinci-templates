@@ -95,7 +95,6 @@
 					Inputs = {
 						["Gamut.SLogVersion"] = Input { Value = FuID { "SLog2" }, },
 						["Clip1.PNGFormat.PostMultiply"] = Input { Value = 1, },
-						Blend = Input { Expression = "INTERTITREmodif.afficher_logo", },
 					},
 					ViewInfo = OperatorInfo { Pos = { 61.3334, 194.03 } },
 				},
@@ -263,6 +262,7 @@
 							SourceOp = "Transform1",
 							Source = "Output",
 						},
+						Blend = Input { Expression = "INTERTITREmodif.afficher_logo", },
 						PerformDepthMerge = Input { Value = 0, }
 					},
 					ViewInfo = OperatorInfo { Pos = { 281.333, 191.212 } },

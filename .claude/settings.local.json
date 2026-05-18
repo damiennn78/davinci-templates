@@ -27,7 +27,9 @@
       "WebFetch(domain:mixinglight.com)",
       "WebFetch(domain:github.com)",
       "PowerShell(gh *)",
-      "PowerShell(git *)"
+      "PowerShell(git *)",
+      "PowerShell(Get-ChildItem -Recurse | Where-Object { -not $_.PSIsContainer } | Select-Object FullName, @{N=\"KB\";E={[math]::Round\\($_.Length/1KB,1\\)}} | Sort-Object FullName)",
+      "Bash(rtk git *)"
     ]
   }
 }
