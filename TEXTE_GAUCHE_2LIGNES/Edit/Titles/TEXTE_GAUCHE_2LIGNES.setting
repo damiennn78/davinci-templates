@@ -1,0 +1,316 @@
+{
+	Tools = ordered() {
+		MacroTool1 = GroupOperator {
+			Inputs = ordered() {
+				Input1 = InstanceInput {
+					SourceOp = "Glow1",
+					Source = "Filter",
+					Name = "Filtre",
+				},
+				Input2 = InstanceInput {
+					SourceOp = "Glow1",
+					Source = "XGlowSize",
+					Name = "Taille Glow",
+					Default = 10,
+				},
+				Input3 = InstanceInput {
+					SourceOp = "Glow1",
+					Source = "YGlowSize",
+					Name = "Taille Glow",
+					Default = 10,
+				},
+				Input4 = InstanceInput {
+					SourceOp = "Glow1",
+					Source = "Glow",
+					Default = 0.8,
+				},
+				Input5 = InstanceInput {
+					SourceOp = "Glow1",
+					Source = "Blend",
+					Name = "Opacité",
+					Default = 0.2,
+				},
+				Input6 = InstanceInput {
+					SourceOp = "Text1",
+					Source = "StyledText",
+					Name = "Ton texte",
+				},
+				Input7 = InstanceInput {
+					SourceOp = "Text1",
+					Source = "Font",
+					Name = "Police",
+					ControlGroup = 7,
+				},
+				Input8 = InstanceInput {
+					SourceOp = "Text1",
+					Source = "Style",
+					ControlGroup = 7,
+				},
+				Input9 = InstanceInput {
+					SourceOp = "Text1",
+					Source = "Size",
+					Name = "Taille",
+					Default = 0.08,
+				},
+				Input10 = InstanceInput {
+					SourceOp = "Glow1_1",
+					Source = "Filter",
+					Name = "Filtre",
+				},
+				Input11 = InstanceInput {
+					SourceOp = "Glow1_1",
+					Source = "XGlowSize",
+					Name = "Taille Glow",
+					Default = 10,
+				},
+				Input12 = InstanceInput {
+					SourceOp = "Glow1_1",
+					Source = "YGlowSize",
+					Name = "Taille Glow",
+					Default = 10,
+				},
+				Input13 = InstanceInput {
+					SourceOp = "Glow1_1",
+					Source = "Glow",
+					Default = 0.8,
+				},
+				Input14 = InstanceInput {
+					SourceOp = "Glow1_1",
+					Source = "Blend",
+					Name = "Opacité",
+					Default = 0.2,
+				},
+				Input15 = InstanceInput {
+					SourceOp = "Text1_1",
+					Source = "StyledText",
+					Name = "Ton texte",
+				},
+				Input16 = InstanceInput {
+					SourceOp = "Text1_1",
+					Source = "Font",
+					Name = "Police",
+					ControlGroup = 15,
+				},
+				Input17 = InstanceInput {
+					SourceOp = "Text1_1",
+					Source = "Style",
+					ControlGroup = 15,
+				},
+				Input18 = InstanceInput {
+					SourceOp = "Text1_1",
+					Source = "Size",
+					Name = "Taille",
+					Default = 0.08,
+				}
+			},
+			Outputs = {
+				Output1 = InstanceOutput {
+					SourceOp = "Path1",
+					Source = "Heading",
+				},
+				Output2 = InstanceOutput {
+					SourceOp = "Path2",
+					Source = "Heading",
+				},
+				MainOutput1 = InstanceOutput {
+					SourceOp = "MediaOut1",
+					Source = "Output",
+				}
+			},
+			ViewInfo = GroupInfo { Pos = { 0, 0 } },
+			Tools = ordered() {
+				Background1 = Background {
+					Inputs = {
+						Width = Input { Value = 1920, },
+						Height = Input { Value = 1080, },
+						UseFrameFormatSettings = Input { Value = 1, },
+						["Gamut.SLogVersion"] = Input { Value = FuID { "SLog2" }, }
+					},
+					ViewInfo = OperatorInfo { Pos = { 196.667, 27.9697 } },
+				},
+				Glow1 = Glow {
+					Inputs = {
+						Blend = Input { Value = 0.2, },
+						Filter = Input { Value = FuID { "Fast Gaussian" }, },
+						Input = Input {
+							SourceOp = "Text1",
+							Source = "Output",
+						}
+					},
+					ViewInfo = OperatorInfo { Pos = { 378, 105.545 } },
+				},
+				Text1 = TextPlus {
+					Inputs = {
+						EffectMask = Input {
+							SourceOp = "Background1",
+							Source = "Output",
+						},
+						Width = Input { Value = 1920, },
+						Height = Input { Value = 1080, },
+						UseFrameFormatSettings = Input { Value = 1, },
+						["Gamut.SLogVersion"] = Input { Value = FuID { "SLog2" }, },
+						Wrap = Input { Value = 1, },
+						LayoutRotation = Input { Value = 1, },
+						CharacterOffset = Input { Value = { -0.47, 0 }, },
+						TransformRotation = Input { Value = 1, },
+						Softness1 = Input { Value = 1, },
+						StyledText = Input { Value = "Ton texte", },
+						Font = Input { Value = "General Sans", },
+						Style = Input { Value = "Bold", },
+						VerticalJustificationNew = Input { Value = 3, },
+						HorizontalLeftCenterRight = Input { Value = -1, },
+						HorizontalJustificationNew = Input { Value = 3, }
+					},
+					ViewInfo = OperatorInfo { Pos = { 235.333, 106.758 } },
+				},
+				Transform1 = Transform {
+					CtrlWZoom = false,
+					Inputs = {
+						Center = Input {
+							SourceOp = "Path1",
+							Source = "Position",
+						},
+						Input = Input {
+							SourceOp = "Glow1",
+							Source = "Output",
+						}
+					},
+					ViewInfo = OperatorInfo { Pos = { 526, 104.333 } },
+				},
+				Path1 = PolyPath {
+					DrawMode = "InsertAndModify",
+					CtrlWZoom = false,
+					Inputs = {
+						Displacement = Input {
+							SourceOp = "Path1Displacement",
+							Source = "Value",
+						},
+						PolyLine = Input {
+							Value = Polyline {
+								Points = {
+									{ Linear = true, LockY = true, X = -1.012, Y = 0, RX = 0.337333333333333, RY = 0 },
+									{ Linear = true, LockY = true, X = 0, Y = 0, LX = -0.337333333333333, LY = 0 }
+								}
+							},
+						}
+					},
+				},
+				Path1Displacement = BezierSpline {
+					SplineColor = { Red = 255, Green = 0, Blue = 255 },
+					CtrlWZoom = false,
+					KeyFrames = {
+						[0.0875559275319415] = { 0, RH = { 1.39170395168796, 0.233333333333333 }, Flags = { Linear = true, LockedY = true } },
+						[4] = { 0.7, LH = { 2.69585197584398, 0.466666666666667 }, RH = { 7, 0.8 }, Flags = { Linear = true } },
+						[13] = { 1, LH = { 10, 0.9 }, Flags = { Linear = true, LockedY = true } }
+					}
+				},
+				Merge1 = Merge {
+					Inputs = {
+						Background = Input {
+							SourceOp = "Transform1",
+							Source = "Output",
+						},
+						PerformDepthMerge = Input { Value = 0, }
+					},
+					ViewInfo = OperatorInfo { Pos = { 667.333, 104.333 } },
+				},
+				Merge1_1 = Merge {
+					Inputs = {
+						Background = Input {
+							SourceOp = "Transform1_1",
+							Source = "Output",
+						},
+						Foreground = Input {
+							SourceOp = "Merge1",
+							Source = "Output",
+						},
+						PerformDepthMerge = Input { Value = 0, }
+					},
+					ViewInfo = OperatorInfo { Pos = { 670.667, 174.636 } },
+				},
+				Glow1_1 = Glow {
+					Inputs = {
+						Blend = Input { Value = 0.2, },
+						Filter = Input { Value = FuID { "Fast Gaussian" }, },
+						Input = Input {
+							SourceOp = "Text1_1",
+							Source = "Output",
+						}
+					},
+					ViewInfo = OperatorInfo { Pos = { 381.334, 175.848 } },
+				},
+				Transform1_1 = Transform {
+					Inputs = {
+						Center = Input {
+							SourceOp = "Path2",
+							Source = "Position",
+						},
+						Input = Input {
+							SourceOp = "Glow1_1",
+							Source = "Output",
+						}
+					},
+					ViewInfo = OperatorInfo { Pos = { 529.334, 174.636 } },
+				},
+				Path2 = PolyPath {
+					DrawMode = "InsertAndModify",
+					CtrlWZoom = false,
+					Inputs = {
+						Displacement = Input {
+							SourceOp = "Path2Displacement",
+							Source = "Value",
+						},
+						PolyLine = Input {
+							Value = Polyline {
+								Points = {
+									{ Linear = true, LockY = true, X = -1.014, Y = 0, RX = 0.338, RY = 0 },
+									{ Linear = true, LockY = true, X = 0, Y = 0, LX = -0.338, LY = 0 }
+								}
+							},
+						}
+					},
+				},
+				Path2Displacement = BezierSpline {
+					SplineColor = { Red = 255, Green = 0, Blue = 255 },
+					CtrlWZoom = false,
+					KeyFrames = {
+						[24] = { 0, RH = { 25.3333333333333, 0.233333333333333 }, Flags = { LockedY = true } },
+						[28] = { 0.7, LH = { 26.6666666666667, 0.466666666666667 }, RH = { 30.6666666666667, 0.8 }, Flags = { Linear = true } },
+						[36] = { 1, LH = { 33.3333333333333, 0.9 }, Flags = { Linear = true, LockedY = true } }
+					}
+				},
+				Text1_1 = TextPlus {
+					Inputs = {
+						Width = Input { Value = 1920, },
+						Height = Input { Value = 1080, },
+						UseFrameFormatSettings = Input { Value = 1, },
+						["Gamut.SLogVersion"] = Input { Value = FuID { "SLog2" }, },
+						Wrap = Input { Value = 1, },
+						LayoutRotation = Input { Value = 1, },
+						CharacterOffset = Input { Value = { -0.47, -0.065 }, },
+						TransformRotation = Input { Value = 1, },
+						Softness1 = Input { Value = 1, },
+						StyledText = Input { Value = "sur 2 lignes", },
+						Font = Input { Value = "General Sans", },
+						Style = Input { Value = "Bold", },
+						VerticalJustificationNew = Input { Value = 3, },
+						HorizontalLeftCenterRight = Input { Value = -1, },
+						HorizontalJustificationNew = Input { Value = 3, }
+					},
+					ViewInfo = OperatorInfo { Pos = { 238.667, 177.061 } },
+				},
+				MediaOut1 = MediaOut {
+					Inputs = {
+						Index = Input { Value = "0", },
+						Input = Input {
+							SourceOp = "Merge1_1",
+							Source = "Output",
+						}
+					},
+					ViewInfo = OperatorInfo { Pos = { 816, 175.561 } },
+				}
+			},
+		}
+	},
+	ActiveTool = "MacroTool1"
+}

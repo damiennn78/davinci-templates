@@ -283,19 +283,19 @@ afficher_logo = {
 #### ComboControl (liste déroulante)
 
 ```lua
-position_logo = {
+position_logo = ordered() {
     LINKS_Name         = "Position logo",
     LINKID_DataType    = "Number",
     INPID_InputControl = "ComboControl",
-    CC_Items           = {
-        "Gauche",    -- index 0
-        "Centre",    -- index 1
-        "Droite",    -- index 2
-    },
-    INP_Default        = 0,     -- index de l'item par défaut
+    CCID_AddString     = "Gauche",   -- index 0
+    CCID_AddString     = "Centre",   -- index 1
+    CCID_AddString     = "Droite",   -- index 2
+    INP_Default        = 0,          -- index de l'item par défaut
     ICD_Width          = 1,
 }
 ```
+
+> **Important** : utiliser `ordered()` et `CCID_AddString` (clés répétées). `CC_Items = { ... }` ne fonctionne pas dans les UserControls Fusion.
 
 La valeur retournée est l'**index** (0, 1, 2…) de l'item sélectionné.
 
