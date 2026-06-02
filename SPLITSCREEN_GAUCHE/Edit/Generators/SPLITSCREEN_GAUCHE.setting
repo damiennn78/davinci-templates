@@ -1,0 +1,139 @@
+{
+	Tools = ordered() {
+		SPLITSCREEN_GAUCHE1 = GroupOperator {
+			Inputs = ordered() {
+				Input1 = InstanceInput {
+					SourceOp = "MediaIn1",
+					Source = "ClipName",
+					DefaultText = "",
+				}
+			},
+			Outputs = {
+				MainOutput1 = InstanceOutput {
+					SourceOp = "MediaOut1",
+					Source = "Output",
+				},
+				Output1 = InstanceOutput {
+					SourceOp = "Path1",
+					Source = "Heading",
+				}
+			},
+			ViewInfo = GroupInfo { Pos = { 0, 0 } },
+			Tools = ordered() {
+				KeyframeStretcher1 = KeyStretcher {
+					CtrlWShown = false,
+					Inputs = {
+						Keyframes = Input {
+							SourceOp = "Merge1",
+							Source = "Output",
+						},
+						SourceEnd = Input { Value = 149, },
+						StretchEnd = Input { Value = 149, }
+					},
+					ViewInfo = OperatorInfo { Pos = { 407.333, 100.697 } },
+				},
+				MediaOut1 = MediaOut {
+					CtrlWShown = false,
+					Inputs = {
+						Index = Input { Value = "0", },
+						Input = Input {
+							SourceOp = "KeyframeStretcher1",
+							Source = "Result",
+						}
+					},
+					ViewInfo = OperatorInfo { Pos = { 532, 98.2685 } },
+				},
+				Merge1 = Merge {
+					CtrlWShown = false,
+					Inputs = {
+						Background = Input {
+							SourceOp = "Background1",
+							Source = "Output",
+						},
+						Foreground = Input {
+							SourceOp = "Transform1",
+							Source = "Output",
+						},
+						PerformDepthMerge = Input { Value = 0, }
+					},
+					ViewInfo = OperatorInfo { Pos = { 269.575, 100.189 } },
+				},
+				Transform1 = Transform {
+					CtrlWShown = false,
+					Inputs = {
+						Center = Input {
+							SourceOp = "Path1",
+							Source = "Position",
+						},
+						Size = Input { Value = 0.568, },
+						Input = Input {
+							SourceOp = "MediaIn1",
+							Source = "Output",
+						}
+					},
+					ViewInfo = OperatorInfo { Pos = { 250.243, 19.8547 } },
+				},
+				Path1 = PolyPath {
+					DrawMode = "InsertAndModify",
+					CtrlWZoom = false,
+					Inputs = {
+						Displacement = Input {
+							SourceOp = "Path1Displacement",
+							Source = "Value",
+						},
+						PolyLine = Input {
+							Value = Polyline {
+								Points = {
+									{ Linear = true, LockY = true, X = -1.177, Y = 0, RX = 0.191, RY = 0 },
+									{ Linear = true, LockY = true, X = -0.604, Y = 0, LX = -0.191, LY = 0 }
+								}
+							},
+						}
+					},
+				},
+				Path1Displacement = BezierSpline {
+					SplineColor = { Red = 255, Green = 0, Blue = 255 },
+					CtrlWZoom = false,
+					KeyFrames = {
+						[0] = { 0, RH = { 3.66666666666667, 0.333333333333333 }, Flags = { LockedY = true } },
+						[11] = { 1, LH = { 7.33333333333333, 0.666666666666667 }, Flags = { Linear = true, LockedY = true } }
+					}
+				},
+				Background1 = Background {
+					CtrlWShown = false,
+					Inputs = {
+						Width = Input { Value = 1920, },
+						Height = Input { Value = 1080, },
+						UseFrameFormatSettings = Input { Value = 1, },
+						["Gamut.SLogVersion"] = Input { Value = FuID { "SLog2" }, },
+						TopLeftAlpha = Input { Value = 0, }
+					},
+					ViewInfo = OperatorInfo { Pos = { 90.9083, 96.1365 } },
+				},
+				MediaIn1 = MediaIn {
+					ExtentSet = true,
+					CtrlWZoom = false,
+					CtrlWShown = false,
+					CustomData = { MEDIA_ID = "df7a3151-9dd4-4156-9c8a-42cdc3422a59", MediaProps = { MEDIA_HAS_AUDIO = true, MEDIA_NUM_LAYERS = 1, MEDIA_FORMAT_TYPE = "QuickTime", MEDIA_HEIGHT = 1920, MEDIA_PAR = 1, MEDIA_AUDIO_TRACKS_DESC = { { MEDIA_AUDIO_BIT_DEPTH = 32, MEDIA_AUDIO_TRACK_ID = "df7a3151-9dd4-4156-9c8a-42cdc3422a59", MEDIA_AUDIO_TRACK_NAME = "Emmanuel_Stack_vertical.mp4", MEDIA_AUDIO_NUM_CHANNELS = 2, MEDIA_AUDIO_START_TIME = 0, MEDIA_AUDIO_SAMPLE_RATE = 48000, MEDIA_AUDIO_FRAME_RATE = 25 } }, MEDIA_NAME = "Emmanuel_Stack_vertical.mp4", MEDIA_START_FRAME = 0, MEDIA_AUDIO_TRACKS_NUM = 1, MEDIA_IS_SOURCE_RES = true, MEDIA_SRC_FRAME_RATE = 25, MEDIA_MARK_OUT = 7461, MEDIA_WIDTH = 1080, MEDIA_NUM_FRAMES = 7462, MEDIA_MARK_IN = 0, MEDIA_PATH = "C:\\Users\\damien.mercier\\Desktop\\5D - Emploi Lausanne\\contenu n8n Emmanuel\\HeyGen\\Emmanuel_Stack_vertical.mp4" }, },
+					Inputs = {
+						MediaSource = Input { Value = FuID { "MediaPool" }, },
+						MediaID = Input { Value = "df7a3151-9dd4-4156-9c8a-42cdc3422a59", },
+						AudioTrack = Input { Value = FuID { "No_Audo_Track" }, },
+						Layer = Input { Value = "", },
+						ClipTimeStart = Input { Value = 7312, },
+						ClipTimeEnd = Input { Value = 7461, },
+						Loop = Input { Value = 1, },
+						["Gamut.SLogVersion"] = Input { Value = FuID { "SLog2" }, },
+						DeepOutputMode = Input {
+							Value = 0,
+							Disabled = true,
+						}
+					},
+					ViewInfo = OperatorInfo { Pos = { 83.3333, 18.2727 } },
+					Version = 1
+				}
+			},
+		}
+	},
+	ActiveTool = "SPLITSCREEN_GAUCHE1"
+}
