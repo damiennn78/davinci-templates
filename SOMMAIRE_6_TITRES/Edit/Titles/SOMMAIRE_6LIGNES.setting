@@ -1,55 +1,139 @@
-﻿{
+{
 	Tools = ordered() {
 		SOMMAIRE_6LIGNES = GroupOperator {
 			Inputs = ordered() {
-				Input1 = InstanceInput { SourceOp = "MacroTool1_1_1_2_1", Source = "Input1", Name = "Texte 1", },
-				Input2 = InstanceInput { SourceOp = "MacroTool1_1_1_2_1", Source = "Input2", Name = "Police 1", ControlGroup = 2, },
-				Input3 = InstanceInput { SourceOp = "MacroTool1_1_1_2_1", Source = "Input3", ControlGroup = 2, },
-				Input4 = InstanceInput { SourceOp = "MacroTool1_1_1_2_1", Source = "Input5", Name = "Taille 1", Default = 0.0541, },
-				Input5 = InstanceInput { SourceOp = "MacroTool1_1_1_2_1", Source = "Input6", Name = "Couleur 1", ControlGroup = 3, },
-				Input6 = InstanceInput { SourceOp = "MacroTool1_1_1_2_1", Source = "Input7", ControlGroup = 3, },
-				Input7 = InstanceInput { SourceOp = "MacroTool1_1_1_2_1", Source = "Input8", ControlGroup = 3, },
-				Input8 = InstanceInput { SourceOp = "MacroTool1_1_1_2_1", Source = "Input4", Name = "Numero 1", },
-				Input9 = InstanceInput { SourceOp = "MacroTool1_1_1_2", Source = "Input1", Name = "Texte 2", },
-				Input10 = InstanceInput { SourceOp = "MacroTool1_1_1_2", Source = "Input2", Name = "Police 2", ControlGroup = 4, },
-				Input11 = InstanceInput { SourceOp = "MacroTool1_1_1_2", Source = "Input3", ControlGroup = 4, },
-				Input12 = InstanceInput { SourceOp = "MacroTool1_1_1_2", Source = "Input5", Name = "Taille 2", Default = 0.0541, },
-				Input13 = InstanceInput { SourceOp = "MacroTool1_1_1_2", Source = "Input6", Name = "Couleur 2", ControlGroup = 5, },
-				Input14 = InstanceInput { SourceOp = "MacroTool1_1_1_2", Source = "Input7", ControlGroup = 5, },
-				Input15 = InstanceInput { SourceOp = "MacroTool1_1_1_2", Source = "Input8", ControlGroup = 5, },
-				Input16 = InstanceInput { SourceOp = "MacroTool1_1_1_2", Source = "Input4", Name = "Numero 2", },
-				Input17 = InstanceInput { SourceOp = "MacroTool1_1_1_1_1", Source = "Input1", Name = "Texte 3", },
-				Input18 = InstanceInput { SourceOp = "MacroTool1_1_1_1_1", Source = "Input2", Name = "Police 3", ControlGroup = 6, },
-				Input19 = InstanceInput { SourceOp = "MacroTool1_1_1_1_1", Source = "Input3", ControlGroup = 6, },
-				Input20 = InstanceInput { SourceOp = "MacroTool1_1_1_1_1", Source = "Input5", Name = "Taille 3", Default = 0.0541, },
-				Input21 = InstanceInput { SourceOp = "MacroTool1_1_1_1_1", Source = "Input6", Name = "Couleur 3", ControlGroup = 7, },
-				Input22 = InstanceInput { SourceOp = "MacroTool1_1_1_1_1", Source = "Input7", ControlGroup = 7, },
-				Input23 = InstanceInput { SourceOp = "MacroTool1_1_1_1_1", Source = "Input8", ControlGroup = 7, },
-				Input24 = InstanceInput { SourceOp = "MacroTool1_1_1_1_1", Source = "Input4", Name = "Numero 3", },
-				Input25 = InstanceInput { SourceOp = "MacroTool1_1", Source = "Input1", Name = "Texte 4", },
-				Input26 = InstanceInput { SourceOp = "MacroTool1_1", Source = "Input2", Name = "Police 4", ControlGroup = 8, },
-				Input27 = InstanceInput { SourceOp = "MacroTool1_1", Source = "Input3", ControlGroup = 8, },
-				Input28 = InstanceInput { SourceOp = "MacroTool1_1", Source = "Input5", Name = "Taille 4", Default = 0.0541, },
-				Input29 = InstanceInput { SourceOp = "MacroTool1_1", Source = "Input6", Name = "Couleur 4", ControlGroup = 9, },
-				Input30 = InstanceInput { SourceOp = "MacroTool1_1", Source = "Input7", ControlGroup = 9, },
-				Input31 = InstanceInput { SourceOp = "MacroTool1_1", Source = "Input8", ControlGroup = 9, },
-				Input32 = InstanceInput { SourceOp = "MacroTool1_1", Source = "Input4", Name = "Numero 4", },
-				Input33 = InstanceInput { SourceOp = "MacroTool1_1_1", Source = "Input1", Name = "Texte 5", },
-				Input34 = InstanceInput { SourceOp = "MacroTool1_1_1", Source = "Input2", Name = "Police 5", ControlGroup = 10, },
-				Input35 = InstanceInput { SourceOp = "MacroTool1_1_1", Source = "Input3", ControlGroup = 10, },
-				Input36 = InstanceInput { SourceOp = "MacroTool1_1_1", Source = "Input5", Name = "Taille 5", Default = 0.0541, },
-				Input37 = InstanceInput { SourceOp = "MacroTool1_1_1", Source = "Input6", Name = "Couleur 5", ControlGroup = 11, },
-				Input38 = InstanceInput { SourceOp = "MacroTool1_1_1", Source = "Input7", ControlGroup = 11, },
-				Input39 = InstanceInput { SourceOp = "MacroTool1_1_1", Source = "Input8", ControlGroup = 11, },
-				Input40 = InstanceInput { SourceOp = "MacroTool1_1_1", Source = "Input4", Name = "Numero 5", },
-				Input41 = InstanceInput { SourceOp = "MacroTool1_1_1_1", Source = "Input1", Name = "Texte 6", },
-				Input42 = InstanceInput { SourceOp = "MacroTool1_1_1_1", Source = "Input2", Name = "Police 6", ControlGroup = 12, },
-				Input43 = InstanceInput { SourceOp = "MacroTool1_1_1_1", Source = "Input3", ControlGroup = 12, },
-				Input44 = InstanceInput { SourceOp = "MacroTool1_1_1_1", Source = "Input5", Name = "Taille 6", Default = 0.0541, },
-				Input45 = InstanceInput { SourceOp = "MacroTool1_1_1_1", Source = "Input6", Name = "Couleur 6", ControlGroup = 13, },
-				Input46 = InstanceInput { SourceOp = "MacroTool1_1_1_1", Source = "Input7", ControlGroup = 13, },
-				Input47 = InstanceInput { SourceOp = "MacroTool1_1_1_1", Source = "Input8", ControlGroup = 13, },
-				Input48 = InstanceInput { SourceOp = "MacroTool1_1_1_1", Source = "Input4", Name = "Numero 6", },
+				Titre1_Texte = InstanceInput {
+					SourceOp = "MacroTool1_1_1_2_1",
+					Source = "Input1",
+					Name = "Titre 1 - Texte",
+				},
+				Titre1_Police = InstanceInput {
+					SourceOp = "MacroTool1_1_1_2_1",
+					Source = "Input2",
+					Name = "Titre 1 - Police",
+					ControlGroup = 2,
+				},
+				Titre1_Style = InstanceInput {
+					SourceOp = "MacroTool1_1_1_2_1",
+					Source = "Input3",
+					Name = "Titre 1 - Style",
+					ControlGroup = 2,
+				},
+				Titre1_Numero = InstanceInput {
+					SourceOp = "MacroTool1_1_1_2_1",
+					Source = "Input4",
+					Name = "Titre 1 - Numéro",
+				},
+				Titre2_Texte = InstanceInput {
+					SourceOp = "MacroTool1_1_1_2",
+					Source = "Input1",
+					Name = "Titre 2 - Texte",
+				},
+				Titre2_Police = InstanceInput {
+					SourceOp = "MacroTool1_1_1_2",
+					Source = "Input2",
+					Name = "Titre 2 - Police",
+					ControlGroup = 5,
+				},
+				Titre2_Style = InstanceInput {
+					SourceOp = "MacroTool1_1_1_2",
+					Source = "Input3",
+					Name = "Titre 2 - Style",
+					ControlGroup = 5,
+				},
+				Titre2_Numero = InstanceInput {
+					SourceOp = "MacroTool1_1_1_2",
+					Source = "Input4",
+					Name = "Titre 2 - Numéro",
+				},
+				Titre3_Texte = InstanceInput {
+					SourceOp = "MacroTool1_1_1_1_1",
+					Source = "Input1",
+					Name = "Titre 3 - Texte",
+				},
+				Titre3_Police = InstanceInput {
+					SourceOp = "MacroTool1_1_1_1_1",
+					Source = "Input2",
+					Name = "Titre 3 - Police",
+					ControlGroup = 8,
+				},
+				Titre3_Style = InstanceInput {
+					SourceOp = "MacroTool1_1_1_1_1",
+					Source = "Input3",
+					Name = "Titre 3 - Style",
+					ControlGroup = 8,
+				},
+				Titre3_Numero = InstanceInput {
+					SourceOp = "MacroTool1_1_1_1_1",
+					Source = "Input4",
+					Name = "Titre 3 - Numéro",
+				},
+				Titre4_Texte = InstanceInput {
+					SourceOp = "MacroTool1_1",
+					Source = "Input1",
+					Name = "Titre 4 - Texte",
+				},
+				Titre4_Police = InstanceInput {
+					SourceOp = "MacroTool1_1",
+					Source = "Input2",
+					Name = "Titre 4 - Police",
+					ControlGroup = 11,
+				},
+				Titre4_Style = InstanceInput {
+					SourceOp = "MacroTool1_1",
+					Source = "Input3",
+					Name = "Titre 4 - Style",
+					ControlGroup = 11,
+				},
+				Titre4_Numero = InstanceInput {
+					SourceOp = "MacroTool1_1",
+					Source = "Input4",
+					Name = "Titre 4 - Numéro",
+				},
+				Titre5_Texte = InstanceInput {
+					SourceOp = "MacroTool1_1_1",
+					Source = "Input1",
+					Name = "Titre 5 - Texte",
+				},
+				Titre5_Police = InstanceInput {
+					SourceOp = "MacroTool1_1_1",
+					Source = "Input2",
+					Name = "Titre 5 - Police",
+					ControlGroup = 14,
+				},
+				Titre5_Style = InstanceInput {
+					SourceOp = "MacroTool1_1_1",
+					Source = "Input3",
+					Name = "Titre 5 - Style",
+					ControlGroup = 14,
+				},
+				Titre5_Numero = InstanceInput {
+					SourceOp = "MacroTool1_1_1",
+					Source = "Input4",
+					Name = "Titre 5 - Numéro",
+				},
+				Titre6_Texte = InstanceInput {
+					SourceOp = "MacroTool1_1_1_1",
+					Source = "Input1",
+					Name = "Titre 6 - Texte",
+				},
+				Titre6_Police = InstanceInput {
+					SourceOp = "MacroTool1_1_1_1",
+					Source = "Input2",
+					Name = "Titre 6 - Police",
+					ControlGroup = 17,
+				},
+				Titre6_Style = InstanceInput {
+					SourceOp = "MacroTool1_1_1_1",
+					Source = "Input3",
+					Name = "Titre 6 - Style",
+					ControlGroup = 17,
+				},
+				Titre6_Numero = InstanceInput {
+					SourceOp = "MacroTool1_1_1_1",
+					Source = "Input4",
+					Name = "Titre 6 - Numéro",
+				},
 			},
 			Outputs = {
 				Output1 = InstanceOutput {
@@ -203,28 +287,6 @@
 							SourceOp = "Text1_1",
 							Source = "StyledText",
 							Name = "Numéro",
-						},
-						Input5 = InstanceInput {
-							SourceOp = "TITRE_SOMMAIRE_1",
-							Source = "Size",
-							Name = "Taille",
-							Default = 0.0541,
-						},
-						Input6 = InstanceInput {
-							SourceOp = "TITRE_SOMMAIRE_1",
-							Source = "Red1",
-							Name = "Couleur",
-							ControlGroup = 3,
-						},
-						Input7 = InstanceInput {
-							SourceOp = "TITRE_SOMMAIRE_1",
-							Source = "Green1",
-							ControlGroup = 3,
-						},
-						Input8 = InstanceInput {
-							SourceOp = "TITRE_SOMMAIRE_1",
-							Source = "Blue1",
-							ControlGroup = 3,
 						}
 					},
 					Outputs = {
@@ -588,28 +650,6 @@
 							SourceOp = "Text1_1_1_2",
 							Source = "StyledText",
 							Name = "Numéro",
-						},
-						Input5 = InstanceInput {
-							SourceOp = "TITRE_SOMMAIRE_1_1_2",
-							Source = "Size",
-							Name = "Taille",
-							Default = 0.0541,
-						},
-						Input6 = InstanceInput {
-							SourceOp = "TITRE_SOMMAIRE_1_1_2",
-							Source = "Red1",
-							Name = "Couleur",
-							ControlGroup = 3,
-						},
-						Input7 = InstanceInput {
-							SourceOp = "TITRE_SOMMAIRE_1_1_2",
-							Source = "Green1",
-							ControlGroup = 3,
-						},
-						Input8 = InstanceInput {
-							SourceOp = "TITRE_SOMMAIRE_1_1_2",
-							Source = "Blue1",
-							ControlGroup = 3,
 						}
 					},
 					Outputs = {
@@ -1018,28 +1058,6 @@
 							SourceOp = "Text1_1_1",
 							Source = "StyledText",
 							Name = "Numéro",
-						},
-						Input5 = InstanceInput {
-							SourceOp = "TITRE_SOMMAIRE_1_1",
-							Source = "Size",
-							Name = "Taille",
-							Default = 0.0541,
-						},
-						Input6 = InstanceInput {
-							SourceOp = "TITRE_SOMMAIRE_1_1",
-							Source = "Red1",
-							Name = "Couleur",
-							ControlGroup = 3,
-						},
-						Input7 = InstanceInput {
-							SourceOp = "TITRE_SOMMAIRE_1_1",
-							Source = "Green1",
-							ControlGroup = 3,
-						},
-						Input8 = InstanceInput {
-							SourceOp = "TITRE_SOMMAIRE_1_1",
-							Source = "Blue1",
-							ControlGroup = 3,
 						}
 					},
 					Outputs = {
@@ -1387,28 +1405,6 @@
 							SourceOp = "Text1_1_1_1",
 							Source = "StyledText",
 							Name = "Numéro",
-						},
-						Input5 = InstanceInput {
-							SourceOp = "TITRE_SOMMAIRE_1_1_1",
-							Source = "Size",
-							Name = "Taille",
-							Default = 0.0541,
-						},
-						Input6 = InstanceInput {
-							SourceOp = "TITRE_SOMMAIRE_1_1_1",
-							Source = "Red1",
-							Name = "Couleur",
-							ControlGroup = 3,
-						},
-						Input7 = InstanceInput {
-							SourceOp = "TITRE_SOMMAIRE_1_1_1",
-							Source = "Green1",
-							ControlGroup = 3,
-						},
-						Input8 = InstanceInput {
-							SourceOp = "TITRE_SOMMAIRE_1_1_1",
-							Source = "Blue1",
-							ControlGroup = 3,
 						}
 					},
 					Outputs = {
@@ -1756,28 +1752,6 @@
 							SourceOp = "Text1_1_1_2_1",
 							Source = "StyledText",
 							Name = "Numéro",
-						},
-						Input5 = InstanceInput {
-							SourceOp = "TITRE_SOMMAIRE_1_1_2_1",
-							Source = "Size",
-							Name = "Taille",
-							Default = 0.0541,
-						},
-						Input6 = InstanceInput {
-							SourceOp = "TITRE_SOMMAIRE_1_1_2_1",
-							Source = "Red1",
-							Name = "Couleur",
-							ControlGroup = 3,
-						},
-						Input7 = InstanceInput {
-							SourceOp = "TITRE_SOMMAIRE_1_1_2_1",
-							Source = "Green1",
-							ControlGroup = 3,
-						},
-						Input8 = InstanceInput {
-							SourceOp = "TITRE_SOMMAIRE_1_1_2_1",
-							Source = "Blue1",
-							ControlGroup = 3,
 						}
 					},
 					Outputs = {
@@ -2125,28 +2099,6 @@
 							SourceOp = "Text1_1_1_1_1",
 							Source = "StyledText",
 							Name = "Numéro",
-						},
-						Input5 = InstanceInput {
-							SourceOp = "TITRE_SOMMAIRE_1_1_1_1",
-							Source = "Size",
-							Name = "Taille",
-							Default = 0.0541,
-						},
-						Input6 = InstanceInput {
-							SourceOp = "TITRE_SOMMAIRE_1_1_1_1",
-							Source = "Red1",
-							Name = "Couleur",
-							ControlGroup = 3,
-						},
-						Input7 = InstanceInput {
-							SourceOp = "TITRE_SOMMAIRE_1_1_1_1",
-							Source = "Green1",
-							ControlGroup = 3,
-						},
-						Input8 = InstanceInput {
-							SourceOp = "TITRE_SOMMAIRE_1_1_1_1",
-							Source = "Blue1",
-							ControlGroup = 3,
 						}
 					},
 					Outputs = {
