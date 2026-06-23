@@ -989,17 +989,13 @@
 							Depth = 0,
 							TimeCode = 0,
 							GlobalStart = 0,
-							GlobalEnd = 0,
+							GlobalEnd = 0
 						}
 					},
 					NameSet = true,
 					Inputs = {
-						EffectMask = Input {
-							SourceOp = "Background1",
-							Source = "Output",
-						},
 						["Gamut.SLogVersion"] = Input { Value = FuID { "SLog2" }, },
-						["Clip1.PNGFormat.PostMultiply"] = Input { Value = 1, },
+						["Clip1.PNGFormat.PostMultiply"] = Input { Value = 1, }
 					},
 					ViewInfo = OperatorInfo { Pos = { -236, 47.3942 } },
 				},
@@ -1020,15 +1016,21 @@
 							Depth = 0,
 							TimeCode = 0,
 							GlobalStart = 0,
-							GlobalEnd = 0,
+							GlobalEnd = 0
 						}
 					},
 					NameSet = true,
 					Inputs = {
 						["Gamut.SLogVersion"] = Input { Value = FuID { "SLog2" }, },
-						["Clip1.PNGFormat.PostMultiply"] = Input { Value = 1, },
+						["Clip1.PNGFormat.PostMultiply"] = Input { Value = 1, }
 					},
 					ViewInfo = OperatorInfo { Pos = { -236, 87.6669 } },
+				},
+ = {
+						["Gamut.SLogVersion"] = Input { Value = FuID { "SLog2" }, },
+						["Clip1.PNGFormat.PostMultiply"] = Input { Value = 1, }
+					},
+ = OperatorInfo { Pos = { -236, 87.6669 } },
 				},
 				MacroTool1_1_1_1 = GroupOperator {
 					NameSet = true,
@@ -1121,6 +1123,7 @@
 							Inputs = {
 								GlobalIn = Input { Value = 87, },
 								GlobalOut = Input { Value = 236, },
+
 								Width = Input { Value = 1920, },
 								Height = Input { Value = 1080, },
 								UseFrameFormatSettings = Input { Value = 1, },
