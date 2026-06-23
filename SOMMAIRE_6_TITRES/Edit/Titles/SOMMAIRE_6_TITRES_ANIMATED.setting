@@ -1,4 +1,4 @@
-{
+﻿{
 	Tools = ordered() {
 		SOMMAIRE_6_TITRES_ANIMATED = GroupOperator {
 			Inputs = ordered() {
@@ -258,7 +258,7 @@
 					CustomData = {
 						Path = {
 							Map = {
-								["Setting:"] = "C:\\Users\\damien.mercier\\Desktop\\5D - Emploi Lausanne\\contenu n8n Emmanuel\\Template\\SOMMAIRE\\Edit\\Titles\\"
+								["Setting:"] = "Fusion:Templates/Edit/Titles/Assets/"
 							}
 						},
 					},
@@ -618,7 +618,7 @@
 					CustomData = {
 						Path = {
 							Map = {
-								["Setting:"] = "C:\\Users\\damien.mercier\\Desktop\\5D - Emploi Lausanne\\contenu n8n Emmanuel\\Template\\SOMMAIRE\\Edit\\Titles\\"
+								["Setting:"] = "Fusion:Templates/Edit/Titles/Assets/"
 							}
 						},
 					},
@@ -979,7 +979,7 @@
 						MediaProps = {
 							MEDIA_NUM_LAYERS = 0,
 							MEDIA_FORMAT_TYPE = "PNG",
-							MEDIA_PATH = "C:\\Users\\damien.mercier\\Desktop\\5D - Emploi Lausanne\\contenu n8n Emmanuel\\Template\\SOMMAIRE\\TITRE ET FOND\\fond.png",
+							MEDIA_PATH = "Fusion:Templates/Edit/Titles/Assets/fond.png",
 							MEDIA_LAYER_DESC = {
 							},
 							MEDIA_NAME = "fond.png",
@@ -1035,7 +1035,7 @@
 						MediaProps = {
 							MEDIA_NUM_LAYERS = 0,
 							MEDIA_FORMAT_TYPE = "PNG",
-							MEDIA_PATH = "C:\\Users\\damien.mercier\\Desktop\\5D - Emploi Lausanne\\contenu n8n Emmanuel\\Template\\SOMMAIRE\\TITRE ET FOND\\TITRE_SOMMAIRE\\Fichier 2SOMMAIRE-TITRE-ClashDisplay.png",
+							MEDIA_PATH = "Fusion:Templates/Edit/Titles/Assets/TITRE_SOMMAIRE/Fichier 2SOMMAIRE-TITRE-ClashDisplay.png",
 							MEDIA_LAYER_DESC = {
 							},
 							MEDIA_NAME = "Fichier 2SOMMAIRE-TITRE-ClashDisplay.png",
@@ -1080,7 +1080,7 @@
 					CustomData = {
 						Path = {
 							Map = {
-								["Setting:"] = "C:\\Users\\damien.mercier\\Desktop\\5D - Emploi Lausanne\\contenu n8n Emmanuel\\Template\\SOMMAIRE\\Edit\\Titles\\"
+								["Setting:"] = "Fusion:Templates/Edit/Titles/Assets/"
 							}
 						},
 					},
@@ -1471,7 +1471,7 @@
 					CustomData = {
 						Path = {
 							Map = {
-								["Setting:"] = "C:\\Users\\damien.mercier\\Desktop\\5D - Emploi Lausanne\\contenu n8n Emmanuel\\Template\\SOMMAIRE\\Edit\\Titles\\"
+								["Setting:"] = "Fusion:Templates/Edit/Titles/Assets/"
 							}
 						},
 					},
@@ -1840,7 +1840,7 @@
 					CustomData = {
 						Path = {
 							Map = {
-								["Setting:"] = "C:\\Users\\damien.mercier\\Desktop\\5D - Emploi Lausanne\\contenu n8n Emmanuel\\Template\\SOMMAIRE\\Edit\\Titles\\"
+								["Setting:"] = "Fusion:Templates/Edit/Titles/Assets/"
 							}
 						},
 					},
@@ -2240,7 +2240,7 @@
 					CustomData = {
 						Path = {
 							Map = {
-								["Setting:"] = "C:\\Users\\damien.mercier\\Desktop\\5D - Emploi Lausanne\\contenu n8n Emmanuel\\Template\\SOMMAIRE\\Edit\\Titles\\"
+								["Setting:"] = "Fusion:Templates/Edit/Titles/Assets/"
 							}
 						},
 					},
