@@ -972,107 +972,53 @@
 						}
 					},
 				},
-				MediaIn1 = MediaIn {
-					ExtentSet = true,
-					CustomData = {
-						MEDIA_ID = "371d139d-172b-42ac-824e-f75faa3c93b1",
-						MediaProps = {
-							MEDIA_NUM_LAYERS = 0,
-							MEDIA_FORMAT_TYPE = "PNG",
-							MEDIA_PATH = "Fusion:Templates/Edit/Titles/Assets/fond.png",
-							MEDIA_LAYER_DESC = {
-							},
-							MEDIA_NAME = "fond.png",
-							MEDIA_HEIGHT = 1080,
-							MEDIA_START_FRAME = 0,
-							MEDIA_IS_SOURCE_RES = true,
-							MEDIA_SRC_FRAME_RATE = 30,
-							MEDIA_MARK_OUT = 0,
-							MEDIA_WIDTH = 1920,
-							MEDIA_NUM_FRAMES = 1,
-							MEDIA_MARK_IN = 0,
-							MEDIA_PAR = 1
-						},
-					},
+				MediaIn1 = Loader {
 					Inputs = {
 						EffectMask = Input {
 							SourceOp = "Background1",
 							Source = "Output",
 						},
-						MediaSource = Input { Value = FuID { "MediaPool" }, },
-						MediaID = Input { Value = "371d139d-172b-42ac-824e-f75faa3c93b1", },
-						AudioTrack = Input { Value = FuID { "Timeline Audio" }, },
-						Layer = Input { Value = "", },
-						ClipTimeEnd = Input { Value = 0, },
-						Loop = Input { Value = 1, },
-						["Gamut.SLogVersion"] = Input { Value = FuID { "SLog2" }, },
-						DeepOutputMode = Input {
-							Value = 0,
-							Disabled = true,
-						},
-						LeftAudio = Input {
-							SourceOp = "Left",
-							Source = "Data",
-						},
-						RightAudio = Input {
-							SourceOp = "Right",
-							Source = "Data",
+						Clip = Input {
+							Value = Clip {
+							Filename = "Fusion:/Templates/Edit/Titles/Assets/fond.png",
+							FormatID = "PNGFormat",
+							StartFrame = 0,
+							LengthSetManually = true,
+							TrimIn = 0,
+							TrimOut = 0,
+							ExtendFirst = 1,
+							ExtendLast = 1,
+							Loop = 1,
+							AspectMode = 0,
+							Depth = 0,
+							TimeCode = 0,
+							GlobalStart = 0,
+							GlobalEnd = 0
+							}
 						}
-					},
 					ViewInfo = OperatorInfo { Pos = { -236, 47.3942 } },
-					Version = 1
 				},
-				Left = AudioDisplay {
-					CtrlWZoom = false,
-				},
-				Right = AudioDisplay {
-					CtrlWZoom = false,
-				},
-				MediaIn2 = MediaIn {
-					ExtentSet = true,
-					CustomData = {
-						MEDIA_ID = "4b95d77a-486f-4a4f-bb0a-4ea5d84f8c4f",
-						MediaProps = {
-							MEDIA_NUM_LAYERS = 0,
-							MEDIA_FORMAT_TYPE = "PNG",
-							MEDIA_PATH = "Fusion:Templates/Edit/Titles/Assets/TITRE_SOMMAIRE/Fichier 2SOMMAIRE-TITRE-ClashDisplay.png",
-							MEDIA_LAYER_DESC = {
-							},
-							MEDIA_NAME = "Fichier 2SOMMAIRE-TITRE-ClashDisplay.png",
-							MEDIA_HEIGHT = 78,
-							MEDIA_START_FRAME = 0,
-							MEDIA_IS_SOURCE_RES = true,
-							MEDIA_SRC_FRAME_RATE = 30,
-							MEDIA_MARK_OUT = 0,
-							MEDIA_WIDTH = 420,
-							MEDIA_NUM_FRAMES = 1,
-							MEDIA_MARK_IN = 0,
-							MEDIA_PAR = 1
-						},
-					},
+				MediaIn2 = Loader {
 					Inputs = {
-						MediaSource = Input { Value = FuID { "MediaPool" }, },
-						MediaID = Input { Value = "4b95d77a-486f-4a4f-bb0a-4ea5d84f8c4f", },
-						AudioTrack = Input { Value = FuID { "Timeline Audio" }, },
-						Layer = Input { Value = "", },
-						ClipTimeEnd = Input { Value = 0, },
-						Loop = Input { Value = 1, },
-						["Gamut.SLogVersion"] = Input { Value = FuID { "SLog2" }, },
-						DeepOutputMode = Input {
-							Value = 0,
-							Disabled = true,
-						},
-						LeftAudio = Input {
-							SourceOp = "Left",
-							Source = "Data",
-						},
-						RightAudio = Input {
-							SourceOp = "Right",
-							Source = "Data",
+						Clip = Input {
+							Value = Clip {
+							Filename = "Fusion:/Templates/Edit/Titles/Assets/TITRE_SOMMAIRE/Fichier 2SOMMAIRE-TITRE-ClashDisplay.png",
+							FormatID = "PNGFormat",
+							StartFrame = 0,
+							LengthSetManually = true,
+							TrimIn = 0,
+							TrimOut = 0,
+							ExtendFirst = 1,
+							ExtendLast = 1,
+							Loop = 1,
+							AspectMode = 0,
+							Depth = 0,
+							TimeCode = 0,
+							GlobalStart = 0,
+							GlobalEnd = 0
+							}
 						}
-					},
 					ViewInfo = OperatorInfo { Pos = { -236, 87.6669 } },
-					Version = 1
 				},
 				MacroTool1_1_1_1 = GroupOperator {
 					NameSet = true,
