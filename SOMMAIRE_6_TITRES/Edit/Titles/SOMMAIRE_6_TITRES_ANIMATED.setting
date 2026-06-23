@@ -973,51 +973,61 @@
 					},
 				},
 				MediaIn1 = Loader {
+					Clips = {
+						Clip {
+							ID = "Clip1",
+							Filename = "setting:Assets\\fond.png",
+							FormatID = "PNGFormat",
+							StartFrame = -1,
+							LengthSetManually = true,
+							TrimIn = 0,
+							TrimOut = 0,
+							ExtendFirst = 0,
+							ExtendLast = 0,
+							Loop = 0,
+							AspectMode = 0,
+							Depth = 0,
+							TimeCode = 0,
+							GlobalStart = 0,
+							GlobalEnd = 0,
+						}
+					},
+					NameSet = true,
 					Inputs = {
 						EffectMask = Input {
 							SourceOp = "Background1",
 							Source = "Output",
 						},
-						Clip = Input {
-							Value = Clip {
-							Filename = "Comp:Assets/fond.png",
-							FormatID = "PNGFormat",
-							StartFrame = 0,
-							LengthSetManually = true,
-							TrimIn = 0,
-							TrimOut = 0,
-							ExtendFirst = 1,
-							ExtendLast = 1,
-							Loop = 1,
-							AspectMode = 0,
-							Depth = 0,
-							TimeCode = 0,
-							GlobalStart = 0,
-							GlobalEnd = 0
-							}
-						}
+						["Gamut.SLogVersion"] = Input { Value = FuID { "SLog2" }, },
+						["Clip1.PNGFormat.PostMultiply"] = Input { Value = 1, },
+					},
 					ViewInfo = OperatorInfo { Pos = { -236, 47.3942 } },
 				},
 				MediaIn2 = Loader {
-					Inputs = {
-						Clip = Input {
-							Value = Clip {
-							Filename = "Comp:Assets/TITRE_SOMMAIRE/2SOMMAIRE-TITRE-ClashDisplay.png",
+					Clips = {
+						Clip {
+							ID = "Clip1",
+							Filename = "setting:Assets\\TITRE_SOMMAIRE\\2SOMMAIRE-TITRE-ClashDisplay.png",
 							FormatID = "PNGFormat",
-							StartFrame = 0,
+							StartFrame = -1,
 							LengthSetManually = true,
 							TrimIn = 0,
 							TrimOut = 0,
-							ExtendFirst = 1,
-							ExtendLast = 1,
-							Loop = 1,
+							ExtendFirst = 0,
+							ExtendLast = 0,
+							Loop = 0,
 							AspectMode = 0,
 							Depth = 0,
 							TimeCode = 0,
 							GlobalStart = 0,
-							GlobalEnd = 0
-							}
+							GlobalEnd = 0,
 						}
+					},
+					NameSet = true,
+					Inputs = {
+						["Gamut.SLogVersion"] = Input { Value = FuID { "SLog2" }, },
+						["Clip1.PNGFormat.PostMultiply"] = Input { Value = 1, },
+					},
 					ViewInfo = OperatorInfo { Pos = { -236, 87.6669 } },
 				},
 				MacroTool1_1_1_1 = GroupOperator {
