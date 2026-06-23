@@ -258,7 +258,7 @@
 					CustomData = {
 						Path = {
 							Map = {
-								["Setting:"] = "Fusion:Templates/Edit/Titles/Assets/"
+								["Setting:"] = "Comp:Assets/"
 							}
 						},
 					},
@@ -618,7 +618,7 @@
 					CustomData = {
 						Path = {
 							Map = {
-								["Setting:"] = "Fusion:Templates/Edit/Titles/Assets/"
+								["Setting:"] = "Comp:Assets/"
 							}
 						},
 					},
@@ -980,7 +980,7 @@
 						},
 						Clip = Input {
 							Value = Clip {
-							Filename = "Fusion:/Templates/Edit/Titles/Assets/fond.png",
+							Filename = "Comp:Assets/fond.png",
 							FormatID = "PNGFormat",
 							StartFrame = 0,
 							LengthSetManually = true,
@@ -1002,7 +1002,7 @@
 					Inputs = {
 						Clip = Input {
 							Value = Clip {
-							Filename = "Fusion:/Templates/Edit/Titles/Assets/TITRE_SOMMAIRE/Fichier 2SOMMAIRE-TITRE-ClashDisplay.png",
+							Filename = "Comp:Assets/TITRE_SOMMAIRE/2SOMMAIRE-TITRE-ClashDisplay.png",
 							FormatID = "PNGFormat",
 							StartFrame = 0,
 							LengthSetManually = true,
@@ -1026,7 +1026,7 @@
 					CustomData = {
 						Path = {
 							Map = {
-								["Setting:"] = "Fusion:Templates/Edit/Titles/Assets/"
+								["Setting:"] = "Comp:Assets/"
 							}
 						},
 					},
@@ -1417,7 +1417,7 @@
 					CustomData = {
 						Path = {
 							Map = {
-								["Setting:"] = "Fusion:Templates/Edit/Titles/Assets/"
+								["Setting:"] = "Comp:Assets/"
 							}
 						},
 					},
@@ -1786,7 +1786,7 @@
 					CustomData = {
 						Path = {
 							Map = {
-								["Setting:"] = "Fusion:Templates/Edit/Titles/Assets/"
+								["Setting:"] = "Comp:Assets/"
 							}
 						},
 					},
@@ -2186,7 +2186,7 @@
 					CustomData = {
 						Path = {
 							Map = {
-								["Setting:"] = "Fusion:Templates/Edit/Titles/Assets/"
+								["Setting:"] = "Comp:Assets/"
 							}
 						},
 					},
